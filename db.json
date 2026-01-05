@@ -1,0 +1,25 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "The Witcher 3",
+      "descricao": "RPG de mundo aberto",
+      "preco": 150,
+      "imagem": "assets/jogo1.png.PNG"
+    },
+    {
+      "id": 2,
+      "nome": "God of War Ragnarok",
+      "descricao": "Aventura épica nórdica",
+      "preco": 250,
+      "imagem": "assets/jogo2.png.PNG"
+    },
+    {
+      "id": 3,
+      "nome": "Elden Ring",
+      "descricao": "RPG de ação desafiador",
+      "preco": 299,
+      "imagem": "assets/jogo3.png.PNG"
+    }
+  ]
+}
