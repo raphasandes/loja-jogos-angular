@@ -1,27 +1,57 @@
-# LojaJogos
+# 🎮 Sistema de Gerenciamento - Loja de Jogos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Este projeto é a aplicação prática final do módulo de **Angular**, focada na construção de um ecossistema completo envolvendo componentes, roteamento, serviços e consumo de API REST.
 
-## Development server
+## 📋 Sobre o Projeto
+O sistema simula o painel administrativo de uma loja de games, permitindo realizar todas as operações de **CRUD** (Create, Read, Update, Delete) através de uma interface moderna e responsiva.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Principais Funcionalidades:
+- **Painel Principal**: Listagem dinâmica de produtos consumidos via API.
+- **Cadastro/Edição**: Formulário inteligente que alterna entre criação de novos itens e atualização de registros existentes.
+- **Exclusão**: Remoção de registros com atualização automática da interface.
+- **Navegação**: Sistema de rotas (`SPA`) para transições suaves entre telas.
 
-## Code scaffolding
+## 🛠️ Tecnologias e Ferramentas
+- **Framework**: [Angular](https://angular.io/)
+- **Estilização**: [Bootstrap 5](https://getbootstrap.com/)
+- **API Fake**: [JSON Server](https://www.npmjs.com/package/json-server)
+- **Linguagem**: TypeScript
+- **Gerenciamento**: NPM e Git
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📂 Estrutura de Pastas Exigida
+Seguindo os manuais da atividade, o projeto foi organizado da seguinte forma:
+- `src/app/componentes/menu`: Barra de navegação global.
+- `src/app/componentes/painel-principal`: Tabela de exibição de produtos.
+- `src/app/componentes/cadastro-produto`: Formulário de dados.
+- `src/app/componentes/rodape`: Informações de rodapé.
+- `src/app/servicos/produto.service.ts`: Centralização das chamadas HTTP.
 
-## Build
+## 🚀 Instruções para Execução
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Para rodar este projeto localmente, siga os passos abaixo:
 
-## Running unit tests
+### 1. Clonar e Instalar
+```bash
+# Clone este repositório
+git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Acesse a pasta do projeto
+cd loja-jogos
 
-## Running end-to-end tests
+```
+### 2. Iniciar o Banco de Dados (API)
+```bash
+É fundamental que o json-server esteja rodando para que os produtos apareçam na tela:
+npx json-server --watch db.json
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+### 3. Iniciar a Aplicação Angular
+```bash
+Em um novo terminal, execute:
+ng serve
 
-## Further help
+Abra o navegador em: http://localhost:4200
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+
+#### Projeto "Implementar Service de consumo de API" da disciplina Framework Front-End com Consumo de API, do curso de Programação FullStack do SENAI.
